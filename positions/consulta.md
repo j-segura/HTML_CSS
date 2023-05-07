@@ -1,5 +1,4 @@
-## ¿Que caracteristicas tiene la posicion "fixed", es decir, desde donde empieza a "contar"
-los pixeles de posicion?
+## ¿Que caracteristicas tiene la posicion "fixed", es decir, desde donde empieza a "contar" los pixeles de posicion?
 
 
 La posición "fixed" es una propiedad CSS que se utiliza para fijar un elemento en una posición específica de la pantalla, independientemente de si el usuario se desplaza por la página. Las características de la posición "fixed" son las siguientes:
