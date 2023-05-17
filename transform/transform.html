@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform:</title>
+</head>
+<body>
+    <h1>Transform</h1>
+    <div class="container">
+        <img src="./image/two.jpg">
+        <span>> rotate(90deg) ></span>
+        <img class="rotate" src="./image/two.jpg">
+    </div>
+    <div class="container">
+        <img src="./image/one.jpg">
+        <span>> scale(.5) ></span>
+        <img  class="scale" src="./image/one.jpg">
+    </div>
+    <div class="container">
+        <img src="./image/three.jpg">
+        <span>> skewX(30deg) ></span>
+        <img class="skewX" src="./image/three.jpg">
+    </div>
+    <div class="container">
+        <img src="./image/four.jpg">
+        <span>> skewY ></span>
+        <img class="skewY" src="./image/four.jpg">
+    </div>
+    <div class="container">
+        <img src="./image/five.jpg">
+        <span>> translate(100px, 100px) ></span>
+        <img class="translate" src="./image/five.jpg">
+    </div>
+</body>
+</html>
+
+<style>
+
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+
+    .rotate {
+        transform: rotate(90deg);
+    }
+
+    .scale {
+        transform: scale(.5);
+    }
+
+    .skewX {
+        transform: skewX(30deg);
+    }
+
+    .skewY {
+        transform: skewY(30deg);
+    }
+
+    .translate {
+        transform: translate(100px, 100px);
+    }
+</style>
