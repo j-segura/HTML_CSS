@@ -28,7 +28,7 @@ La pseudoclase que activa el efecto de transición es :hover. Esta pseudoclase s
 
 * **transition-delay:** especifica un retraso antes de que comience la transición. Puede ayudar a sincronizar múltiples transiciones en un elemento. Ejemplo:
 
-    div {
+    > div {
         transition-property: width;
         transition-duration: 1s;
         transition-delay: 0.5s;
@@ -36,21 +36,21 @@ La pseudoclase que activa el efecto de transición es :hover. Esta pseudoclase s
 
 * **transition-duration:** establece la duración de la transición. Define cuánto tiempo tardará la animación en completarse. Ejemplo:
 
-    div {
+    > div {
         transition-property: width;
         transition-duration: 2s;
     }
 
 * **transition-property:** indica qué propiedades CSS se animarán durante la transición. Pueden ser múltiples propiedades separadas por comas. Ejemplo:
 
-    div {
+    > div {
         transition-property: width, height;
         transition-duration: 1s;
     }
 
 * **transition-timing-function:** define cómo se calcula la progresión de la transición a lo largo del tiempo. Puede ajustar la aceleración o desaceleración de la animación. Ejemplo:
 
-    div {
+    > div {
         transition-property: width;
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
