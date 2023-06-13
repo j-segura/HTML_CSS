@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background: #ff284cdd;
+    border-radius: 50%;
+    animation-name: move; /* hace referencia a un keyframe */
+    animation-duration: 3s;
+    animation-iteration-count: 1; /* infinite cuantas veces se va a repetir */
+    animation-direction: normal;
+
+    /* flujo de la animation-direction
+
+        normal: 0%-100%
+        reverse: 100%-0%
+        alternate: 0%-100%-0%
+        alternate-reverse: 100%-0%-100%
+
+    */
+    
+    /* animation-fill-mode: both; */
+    
+    /* define lo que sucede antes y despues de que la animacion se ejecute 
+
+        def --> none: no pasa nada
+        forwards: los estilos de la ultima aplicacion se seguiran aplicando
+        backwards: tendran los estilos iniciales de la animacion antes de que esta comienze
+        both: mezcla entre backwards y forwards
+    
+    */
+
+    /* animation-delay: 2s; */ /* espersa 2s antes que la animacion comienze */
+
+    /* animation-timing-function: ; */ 
+    /* define la curva de aceleracion de la animacion 
+
+        def -> ease: aumenta la velociadad hacia la mitad de la animacion disminuyendo la velociadad al final.
+        ease-in: comienza lentamente la animacion, aumentando progresivamente hasta que se termine.
+        ease-in-aut: lento - acelera - disminuye otra vez.
+        ease-aut: rapidamente disminuye con el tiempo.
+        linear: es constante.
+
+    */
+
+
+}
+
+.circle:hover {
+    animation-play-state: paused;
+
+    /* define si la animacion esta en pausa 
+    
+        def - running.
+        paused
+
+    */
+}
+
+/* shorthand animation 
+
+    no import el orden sinembargo el primer tiempo siempre sera la duracion y el segundo el delay
+
+*/
+
+.circle {
+    animation: alternate infinite move 3s;
+}
+
+/* los keyframes nos permiten controlar todo el flujo de la animacion */
+
+/* se declaran fuera de los selectores */
+
+@keyframes move {
+    0% {
+        background-color: crimson;
+        transform: translateX(0);
+    }
+
+    100% {
+        background-color: teal;
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+/* NOTA: si no tengo un 100% definido el toma el estado inicial del elemento */
+
+/* usando palabras reservadas */
+
+@keyframes cambiarColor2 {
+    from {
+        background-color: crimson;
+    }
+
+    to {
+        background-color: teal;
+    }
+
+    /* from indica el 0
+    to indica el 100 */
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --main-color: #5E227E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            width: 150px;
+            height: 40px;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        header {
+            width: 100%;
+            border-bottom: 1px solid var(--main-color);
+            margin-bottom: 20px;
+        }
+
+        .color-purple {
+            color: var(--main-color) !important;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        header p {
+            color: #686868;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        #content {
+            border-bottom: 1px solid var(--main-color);
+            margin-bottom: 20px;
+        }
+
+        #content p {
+            font-size: 15px;
+            color: #4b4b4b;
+            margin-bottom: 5px;
+        }
+
+        #content h3 {
+            font-size: 16px;
+            color: #4b4b4b;
+            margin-bottom: 20px;
+        }
+
+        #content div {
+            font-size: 16px;
+            color: #4b4b4b;
+            margin-bottom: 20px;
+            border: 1px solid var(--main-color);
+            padding: 15px;
+            border-radius: 7px;
+            margin: 15px 0 25px;
+        }
+
+        #content div p {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin: 5px 0 30px !important;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #4b4b4b;   
+        }
+
+        .m-0 {
+            margin: 0 !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://s3.us-west-2.amazonaws.com/niloevendi/Negocios%20Nex%20S.A.S./images/logo/i4cz2eSlKR06p9aaLGeiiKCmHqUYruCTydKgZYYb.png" alt="">
+        </div>
+        <h1 class="color-purple">Negocios nex s.a.s</h1>
+        <p><span>NIT: </span>900.430.556-2</p>
+    </header>
+    <section id="content">
+        <p>Emite el siguiente certificado de retención a favor de:</p>
+        <h3 class="color-purple">Corporación del Caribe Colombiano S.A.S</h3>
+
+        <p>Datos del envío:</p>
+
+        <div>
+            <p><b>Número del certificado:</b> CR0123</p>
+            <p><b>Fecha del envío:</b> 30 de junio de 2023</p>
+            <p class="m-0"><b>Enviado a:</b> info@corporacioncaribe.com</p>
+        </div>
+
+        <p class="message">Para visualizar el certificado emitido, diríjase a la sección de archivos adjuntos incluida en este mensaje de correo electrónico. <br><br> Si tienes dudas sobre la generación de este documento y su contenido, comuníquese con la empresa:</p>
+
+        <h3 class="color-purple">Negocios Nex S.A.S</h3>
+    </section>
+    <footer>
+        <p>Mensaje de correo electrónico emitido por Negocios Nex S.A.S a través de la plataforma <span class="color-purple">Nilo App | <a href="https://nilo.app/" target="_black">www.nilo.app</a></span></p>
+    </footer>
+</body>
+</html>
