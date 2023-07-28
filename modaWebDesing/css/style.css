@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #fcc6db;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+.fa-bars {
+    color: var(--main-color) !important;
+    cursor: pointer;
+}
+
+/* .fa-facebook {
+    color: #5537ff;
+}
+
+.fa-whatsapp {
+    color: rgb(80, 224, 140);
+}
+
+.fa-twitter {
+    color: #37c0ff;
+}
+
+.fa-instagram {
+    color: #ff4a9f
+} */
+
+.social-media i {
+    padding: 0 5px; 
+    font-size: 1.5rem;
+    color: #4e7dfd;
+}
+
+/* #menu:checked ul {
+    background: red;
+} */
+
+.search {
+    position: relative;
+}
+
+.search input {
+    outline: none;
+    height: 30px;
+    border: 1px solid rgb(124, 124, 124);
+    padding: 0 20px;
+    border-radius: 25px;
+    transition: all .7s ease;
+    width: 250px;
+}
+
+.btn-s {
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+
+.content {
+    width: 100%;
+    padding: 1rem 10% 0 10%;
+}
+
+.banner {
+    background: var(--main-color);
+    height: 150px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mt-1 {
+    margin-top: 3rem;
+}
+
+
+.main-img {
+    background-color: gray;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul {
+    width: 230px;
+    height: 300px;
+    background-color: #fcc6db8e;
+    left: 10%;
+    top: 90px;
+    display: none;
+    position: fixed;
+}
+
+ul li {
+    list-style: none;
+    width: 100%;
+    padding: 20px 20px 0px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #a01d7f
+}
+
+.banner .img {
+    width: 130px;
+    height: 130px;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.banner .pa {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b30044;
+    padding: 0 25% 0 10%;
+}
+
+.offer {
+    width: 130px;
+    height: 130px;
+    background-color: #ff88b6;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -40px;
+    top: -40px;
+}
+
+.offer p {
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.offer p span {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.horoscopo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.horoscopo .img {
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+
+.horoscopo div h3 {
+    font-size: 1.4rem;
+    color: #55102a;
+}
+
+.horoscopo div p {
+    font-size: 1rem;
+    color: #363636;
+    margin-top: 1rem;
+}
+
+.title {
+    position: absolute;
+    font-size: 2rem;
+    color: #b30044;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.fa-bars:hover ul {
+    left: 20% !important;
+}

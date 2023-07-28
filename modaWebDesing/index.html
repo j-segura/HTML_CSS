@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d2131ce8b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="social-media">
+            <i id="iconMenu" class="fa-solid fa-bars"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <div class="btn-s">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+
+    <ul id="menu">
+        <li><a href="">Buscar</a></li>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Tendencia</a></li>
+        <li><a href="#horoscopo">Horoscopo</a></li>
+        <li><a href="">Comunidad</a></li>
+        <li><a href="">Bellesa</a></li>
+    </ul>
+   
+    <div id="content" class="content">
+        <div class="banner">
+            <div class="img">
+                <img src="./img/barbie.webp" alt="">
+            </div>
+            <p class="pa">No te pierdas de <br>la nueva coleccion</p>
+            <div class="offer">
+                <p><span>NEW</span><br>OFFER</p>
+            </div>
+        </div>
+        <div class="main-img">
+            <img src="./img/barbie2.jpg" alt="">
+        </div>
+        <div id="horoscopo" class="banner mt-1">
+            <img src="./img/s.jpg" alt="">
+            <p class="title">HORÓSCOPO</p>
+        </div>
+        <div class="horoscopo">
+            <div class="img">
+                <img src="./img/cancer.webp" alt="">
+            </div>
+            <div>
+                <h3>HORÓSCOPO SEMANAL CANCER</h3>
+                <p>La chica cáncer está regida por la Luna, que representa las emociones y la
+                    maternidad, y por Venus, planeta de las relaciones y de la energía femenina.
+                    Tiene grandes aspiraciones como mujer, pero le cuesta desligarse de esas emociones
+                    y de su pasado familiar. Quiere cuidar de otros y demostrar que puede
+                    lidiar con todo: ¡es una súper mujer! Por eso, necesita un súper vestido que
+                    ex􀂞lote su intensa personalidad sin dejar a un lado la terrura que la representa.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $iconMenu = document.getElementById('iconMenu');
+        $menu = document.getElementById('menu');
+        $content = document.getElementById('content');
+        $menuActivo = false;
+    
+        $iconMenu.addEventListener("click", function () {
+            if ($menuActivo) {
+                $menu.style.display = 'none';
+                $content.style.paddingLeft = '10%';
+                $menuActivo = false;
+            } else {
+                $menu.style.display = 'block';
+                $content.style.paddingLeft = '30%';
+                $menuActivo = true;
+            }
+        });
+    </script>
+</body>
+</html>
