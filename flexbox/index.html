@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBOx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="hiding"class="alert-card">
+            <h3>Espera me estoy escondiendo...</h3>
+            <img src="./hiding.jpg" alt="">
+        </div>
+        <div id="landingPage" class="alert-card start">
+            <h3>¿Sera que me gustas? The Game</h3>
+            <div class="d-flex rules">
+                <img src="./start.png" alt="">
+                <p><b>Reglas: </b>Me voy a esconder si me encuentras me gustas <br>
+                    <button id="startBtn">Empezar</button> <br>
+                    Mucha suerte! 😊
+                </p>
+            </div>
+        </div>
+        <div id="endPage" class="alert-card endPage">
+            <img src="./end.jpg" alt="">
+            <div>
+                <h3>Felicidades ganaste llamamé <a href="https://wa.me/3015771864" target="_blank"3015771864></a></h3>
+                <button id="finishtBtn">Volver a inicio</button> <br>
+                <span>Created By Segura</span>
+            </div>
+        </div>
+        <h1>Listo ya me escondi.. cuando me encuentres dame click para ganar</h1>
+        <div class="d-flex space-bet">
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span1">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span2">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span3">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span4">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+        </div>
+        <div class="d-flex flex-center">
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span5">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span6">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+        </div>
+        <div class="d-flex space-bet">
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span7">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span8">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span9">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+            <div class="card">
+                <img src="./flork.jpg" alt="">
+                <span id="span10">
+                    <img src="./flork2.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Función para ocultar aleatoriamente "flork3" en un span
+    function hideFlork3() {
+
+        const endPage = document.getElementById('endPage');
+        const landingPage = document.getElementById('landingPage');
+        const alert = document.getElementById('hiding');
+
+        landingPage.style.display = "none";
+        alert.style.display = "flex";
+
+        for(let i = 1; i <= 10; i++) {
+
+            let spanToHide = document.getElementById(`span${i}`);
+
+            // Crear una nueva imagen
+            const newImage = document.createElement("img");
+            newImage.src = "./flork2.png"; // Cambia "./nueva-imagen.png" por la ruta de tu nueva imagen
+            newImage.alt = "Perdite"; // Cambia "Nueva Imagen" por el texto alternativo deseado
+
+            // Reemplazar la imagen existente por la nueva imagen
+            spanToHide.innerHTML = "";
+            spanToHide.appendChild(newImage);
+
+        }
+
+        // Generar un número aleatorio entre 1 y el número total de span (en este caso, 8)
+        const randomIndex = Math.floor(Math.random() * 10) + 1;
+
+        // Obtener el elemento span correspondiente al número aleatorio generado
+        const span = document.getElementById(`span${randomIndex}`);
+
+        // Ocultar la imagen "flork3" dentro de ese span
+        if (span) {
+            // Crear una nueva imagen
+            const newImage = document.createElement("img");
+            newImage.src = "./flork3.jpg"; // Cambia "./nueva-imagen.png" por la ruta de tu nueva imagen
+            newImage.alt = "Ganaste"; // Cambia "Nueva Imagen" por el texto alternativo deseado
+
+            // Reemplazar la imagen existente por la nueva imagen
+            span.innerHTML = ""; // Elimina cualquier contenido existente dentro del span
+            span.appendChild(newImage);
+
+        }
+
+        setTimeout(function() {
+            alert.style.display = "none";
+        }, 1000);
+
+        span.addEventListener('click', function(){
+            endPage.style.display = "flex";
+        });
+
+    }
+
+    // Llamar a la función para ocultar "flork3" cuando sea necesario
+    // hideFlork3();
+
+    const startGame = document.getElementById('startBtn');
+    const finishtBtn = document.getElementById('finishtBtn');
+
+    startGame.addEventListener('click', hideFlork3);
+
+    finishtBtn.addEventListener('click', function() {
+        endPage.style.display = "none";
+        landingPage.style.display = "flex";
+    });
+
+</script>
+
+</html>

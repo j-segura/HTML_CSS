@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la replica 1 */
+
+#replica1 {
+    width: 100%;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+#replica1 .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box-1 {
+    justify-content: space-around;
+    align-items: start;
+}
+
+.box-2 {
+    justify-content: space-around;
+    align-items: end;
+}
+
+.box-3 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-4 {
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.mini-box {
+    background-color: rgba(102, 72, 255, 0.534);
+    width: 100px;
+}
+
+.mini-box-3 {
+    height: 100px;
+}
+
+.mini-box-1, .mini-box-4 {
+    height: 200px;
+}
+
+.mini-box-2 {
+    height: 300px;
+}
+
+/* Estilos replica 2 */
+
+#replica2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(180, 255, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.website {
+    width: 450px;
+    height: 400px;
+    background-color: #fff;
+    border: 10px solid rgb(179, 179, 179);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.website header {
+    width: 100%;
+    height: 40px;
+    background: rgb(219, 219, 219);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.website header div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.red {
+    background: rgb(254, 87, 87);
+}
+
+.yellow {
+    background: rgb(255, 240, 72);
+}
+
+.green {
+    background: rgb(91, 252, 105);
+}
+
+.website section {
+    padding: 15px 10px;
+}
+
+.website section .red-section,
+.website section .medio {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.website section .red-section .box1 {
+    background-color: rgb(254, 87, 87);
+    width: 60%;
+    height: 70px;
+    margin-right: 3%;
+}
+
+.website section .medio .box3 {
+    background-color: rgb(254, 243, 87);
+    width: 45%;
+    height: 150px;
+    margin-right: 3%;
+}
+
+.website section .medio .purple {
+    width: 52%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.website section .medio .box4 {
+    background-color: rgb(198, 87, 254);
+    width: 100%;
+    height: 70px;
+}
+
+.website section .medio .box5 {
+    background-color: rgb(198, 87, 254);
+    width: 100%;
+    height: 70px;
+}
+
+.website section .red-section .box2 {
+    background-color: rgb(254, 87, 87);
+    height: 70px;
+    width: 37%;
+}
+
+.website section .green-section  {
+    display: flex;
+}
+
+.website section .green-section .box6,
+.website section .green-section .box8 {
+    background-color: rgb(96, 197, 100);
+    width: 25%;
+    height: 70px;
+}
+
+.website section .green-section .box7 {
+    background-color: rgb(96, 197, 100);
+    width: 44%;
+    height: 70px;
+    margin: 0 3%;
+}
