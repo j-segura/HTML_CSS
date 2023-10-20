@@ -68,8 +68,6 @@ footer {
 @media (min-width: 576px) {
     main,
     section {
-        width: 100%;
-        display: flex;
         flex-direction: row;
     }
 }
