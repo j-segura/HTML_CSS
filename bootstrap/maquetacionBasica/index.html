@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Maquetación Bootstrap</title>
+  <!-- Enlace al archivo de estilos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      padding-top: 56px; /* Altura de la barra de navegación en pantallas grandes */
+    }
+
+    @media (max-width: 576px) {
+      body {
+        padding-top: 0; /* Eliminar padding superior en pantallas pequeñas */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>Introduccion a Bootstrap</h1>
+        <p>Bootstrap es un framework (conjunto de líneas de código y/o instrucciones) de CSS cuya premisa es mobile first, es decir, está definido que el contenido de una maquetación web sea responsive (adaptable) es decir, vista desde cualquier dispositivo móvil y que su contenido siga siendo agradable a la vista del usuario, es muy fácil de usar ya que solo es necesario aplicar ciertas clases y/o ids propios del framework dentro de nuestra maquetación web.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./img/logo.png" class="img-fluid" alt="Imagen 1">
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. Ejemplos de etiquetas -->
+  <div class="container mt-4">
+    <!-- <abbr> - Abreviatura -->
+    <abbr title="Hypertext Markup Language">SOLUCION ACTIVIDAD DE RECAPITULACION BOOTSTRAP</abbr>
+
+    <!-- <blockquote> - Bloque de cita -->
+    <blockquote class="blockquote">
+      <p class="mb-0">La vida es lo que pasa mientras estás ocupado haciendo otros planes.</p>
+      <footer class="blockquote-footer">John Lennon</footer>
+    </blockquote>
+
+    <!-- <pre> - Texto preformateado -->
+    <pre>
+      Linea 1
+      Linea 2
+      Linea 3
+    </pre>
+
+    <!-- <dl> - Lista de definición -->
+    <dl>
+      <dt>Término 1</dt>
+      <dd>Definición 1</dd>
+      <dt>Término 2</dt>
+      <dd>Definición 2</dd>
+    </dl>
+
+    <!-- <code> - Código -->
+    <code>&lt;p&gt;Este es un párrafo&lt;/p&gt;</code>
+
+    <!-- <kbd> - Teclado -->
+    <kbd>Ctrl</kbd> + <kbd>C</kbd>
+
+  </div>
+
+  <!-- 2. Ejemplos de clases de texto -->
+  <div class="container mt-4">
+    <p class="text-muted">Este es un texto atenuado.</p>
+    <p class="text-primary">Este es un texto primario.</p>
+    <p class="text-success">Este es un texto de éxito.</p>
+    <p class="text-info">Este es un texto informativo.</p>
+    <p class="text-warning">Este es un texto de advertencia.</p>
+    <p class="text-danger">Este es un texto de peligro.</p>
+
+    <!-- a) Diferencias visuales entre .text-primary y .text-info -->
+    <p class="text-primary">Texto primario</p>
+    <p class="text-info">Texto informativo</p>
+
+    <!-- b) Diferencias visuales entre .text-warning y .text-danger -->
+    <p class="text-warning">Texto de advertencia</p>
+    <p class="text-danger">Texto de peligro</p>
+  </div>
+
+  <!-- 3. Ejemplos de clases de fondo -->
+  <div class="container mt-4">
+    <div class="bg-primary text-white">Fondo primario</div>
+    <div class="bg-info text-white">Fondo informativo</div>
+
+    <!-- a) Diferencias visuales entre .bg-primary y .bg-info -->
+    <div class="bg-primary text-white">Fondo primario</div>
+    <div class="bg-info text-white">Fondo informativo</div>
+
+    <!-- b) Diferencias visuales entre .bg-warning y .bg-danger -->
+    <div class="bg-warning">Fondo de advertencia</div>
+    <div class="bg-danger text-white">Fondo de peligro</div>
+  </div>
+
+  <!-- 4. Ejemplos de clases de texto y listas -->
+  <div class="container mt-4">
+    <!-- a) .lead - Texto destacado -->
+    <p class="lead">Este es un texto destacado.</p>
+
+    <!-- b) .small - Texto pequeño -->
+    <p class="small">Este es un texto pequeño.</p>
+
+    <!-- c) .text-left, d) .text-center, e) .text-right - Alineación de texto -->
+    <p class="text-left">Alineado a la izquierda.</p>
+    <p class="text-center">Centrado.</p>
+    <p class="text-right">Alineado a la derecha.</p>
+
+    <!-- f) .text-justify - Justificación de texto -->
+    <p class="text-justify">Este es un texto justificado que ocupa todo el ancho disponible.</p>
+
+    <!-- g) .text-nowrap - No envolver texto -->
+    <p class="text-nowrap">Este es un texto largo que no se envuelve.</p>
+
+    <!-- h) .text-lowercase, i) .text-uppercase, j) .text-capitalize - Transformación de texto -->
+    <p class="text-lowercase">Texto en minúsculas</p>
+    <p class="text-uppercase">Texto en mayúsculas</p>
+    <p class="text-capitalize">Texto con mayúscula inicial</p>
+
+    <!-- k) .initialism - Texto con iniciales -->
+    <p class="initialism">HTML significa Hypertext Markup Language</p>
+
+    <!-- l) .list-unstyled - Lista sin estilos -->
+    <ul class="list-unstyled">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+
+    <!-- m) .list-inline - Lista en línea -->
+    <ul class="list-inline">
+      <li class="list-inline-item">Elemento 1</li>
+      <li class="list-inline-item">Elemento 2</li>
+      <li class="list-inline-item">Elemento 3</li>
+    </ul>
+
+    <!-- n) .dl-horizontal - Lista de definición horizontal -->
+    <dl class="dl-horizontal">
+      <dt>Término 1</dt>
+      <dd>Definición 1</dd>
+      <dt>Término 2</dt>
+      <dd>Definición 2</dd>
+    </dl>
+
+    <!-- o) .pre-scrollable - Área de texto preformateado con desplazamiento -->
+    <pre class="pre-scrollable">
+      Linea 1
+      Linea 2
+      Linea 3
+      <!-- ... (más líneas) -->
+    </pre>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    © 2023 Maquetación básica con Bootstrap, by Juan David Segura
+  </footer>
+
+  <!-- Scripts de Bootstrap (jQuery y Popper.js son requeridos para el funcionamiento de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
